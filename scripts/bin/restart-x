@@ -1,0 +1,24 @@
+#! /bin/zsh
+# usage: sudo restart-x
+# the command finds the display manager name and restarts it. This closes all X-applications and 
+# may cause loss of data
+
+var=`cat /etc/X11/default-display-manager` 	#saves the DM path
+num=`expr length $var`				#saves its lenght
+
+# we loop until we find the last "/" until a max of num-1
+lastslash=0
+for (( i=0; i < $num; ++i ))
+do
+  if test "${var:$i:1}" = "/"
+  then
+  	lastslash=$i
+  fi
+done
+
+lastslash=$((lastslash + 1)) #arrays start at 0
+
+var=${var:$lastslash} #var has been overwritten with the name of the DM
+
+# command that actually restarts the DM, requires sudo
+systemctl restart $var
