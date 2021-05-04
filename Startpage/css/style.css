@@ -1,5 +1,36 @@
 /* created by @vertt_t */
 
+:root{
+    --bg0: #fbf1c7;
+    --bg0_h: #f9f5d7;
+    --bg1: #ebdbb2;
+    --bg2: #d5c4a1;
+    --bg3: #bdae93;
+    --bg4: #a89984;
+    --bg0_s: #f2e5bc;
+    --fg0: #282828;
+    --fg1: #3c3836;
+    --fg2: #504945;
+    --fg3: #665c54;
+    --fg4: #7c6f64;
+    --light-red: #cc241d;
+    --dark-red: #9d0006;
+    --light-green: #98971a;
+    --dark-green: #79740e;
+    --light-yellow: #d79921;
+    --dark-yellow: #b57614;
+    --light-blue: #458588;
+    --dark-blue: #076678;
+    --light-purple: #b16286;
+    --dark-purple: #8f3f71;
+    --light-aqua: #689d6a;
+    --dark-aqua: #427b58;
+    --light-gray: #928374;
+    --dark-gray: #7c6f64;  
+    --light-orange: #d65d0e;
+    --dark-orange: #af3a03;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +38,7 @@
 }
 
 body {
-    background-color:#d8dee9;
+    background-color: var(--bg4);
 }
 
 /* box styling */
@@ -26,7 +57,7 @@ body {
 }
 
 .box-content {
-    background: #4c566a;
+    background: #282828;
     height: 440px;
     width: 400px;
     padding: 20px;
@@ -41,7 +72,7 @@ body {
 
 /** text styling **/
 #sGreetings {
-    color: #a3be8c;
+    color: #d65d0e;
     margin-top: 20px;
     font-size: 14px;
     margin-bottom: 40px;
@@ -50,20 +81,20 @@ body {
 
 .header-txt {
     margin: 10px;
-    color: #81a1c1;
+    color: #98971a;
 }
 
 span {
-    color: #8fbcbb;
+    color: #b8bb26;
 }
 
 .link {
     text-decoration: none;
-    color:#8fbcbb;
+    color:#a89984;
     font-size: 15px;
 }
 .link:hover {
-    color: #b48ead;
+    color: #d3968b;
 }
 
 .searchBox {
@@ -81,9 +112,9 @@ span {
 	border-top-style: none;
 	border-right-style: none;
 	border-left-style: none;
-	border-bottom: 2px solid #a3be8c;
+	border-bottom: 2px solid #d79921;
 	outline: none;
-	background: #d8dee9;
+	background: #fbf1c7;
 	padding: 8px 8px 8px 24px;
 	color:#4c566a;
 	font-size: 20px;
